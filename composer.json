@@ -1,0 +1,40 @@
+{
+    "name": "lizhineng/laravel-reviewable",
+    "description": "Associate review feature to any models.",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Li Zhineng",
+            "email": "im@zhineng.li"
+        }
+    ],
+    "require": {
+        "php": "^7.3",
+        "illuminate/database": "^5.8|^6.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^8.5",
+        "orchestra/testbench": "^4.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Lizhineng\\Reviewable\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Lizhineng\\Reviewable\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "./vendor/bin/phpunit"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Lizhineng\\Reviewable\\ReviewableServiceProvider"
+            ]
+        }
+    }
+}
